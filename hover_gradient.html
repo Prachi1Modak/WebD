@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Hover Button</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+<style>
+*{
+    font-family: 'Borel', cursive;
+font-family: 'Playfair Display', serif;
+font-size: large;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cont{
+    height: 200px;
+    width:100vw;
+
+text-align: center;
+margin:auto;
+background-color: #ee7272;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+
+}
+.butt:hover{
+    background-position: right center;
+    transition-duration: 2s;
+    transition-property: background-image;
+}
+.butt{
+cursor: pointer;
+height:50px;
+width: 150px;
+margin:20px;
+border: none;
+
+
+}
+#b1{
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+
+}
+#b2{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+#b3{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+#b4{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+#b5{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+</style>
+</head>
+<body>
+    <div class="cont">
+        <button class="butt" id="b1">
+            Hover Me
+        </button>
+        <button class="butt" id="b2">
+            Hover me
+        </button>
+        <button class="butt" id="b3">
+            Hover me
+        </button>
+        <button class="butt" id="b4">
+            Hover me
+        </button>
+        <button class="butt" id="b5">
+            Hover me
+        </button>
+    </div>
+</body>
+</html>
