@@ -49,3 +49,38 @@ let isLoggedIn=1
 let boolIsLoggedIn=Boolean(isLoggedIn)
 console.log(isLoggedIn)
 console.log(boolIsLoggedIn)
+
+
+//************************OPERATIONS************************** */
+let s1="hello"
+let s2=" whatchu doin?"
+console.log(s1+s2)
+
+console.log("1"+2)
+console.log(1+"2")
+
+console.log(typeof("1"+2))
+console.log(typeof(1+"2"))
+
+
+console.log("1"+2+2)        //->122
+console.log(1+2+"2")        //->32
+
+//jahase string aata hai, uske baadse its treated as a string, else it is treated as a number!!
+
+console.log(true)       //true
+console.log(+true)      //1
+console.log(+"")        //0
+
+
+/************************************************************************/
+console.log("2">1)      //true
+console.log("02">1)     //true
+
+//always try to use same datatypes
+
+console.log(null>0)     //false
+console.log(null==0)     //false        
+console.log(null>=0)     //true     when such comparision is made, js turns null into 0
+
+// strict check, ===, not just values, but even datatypes
