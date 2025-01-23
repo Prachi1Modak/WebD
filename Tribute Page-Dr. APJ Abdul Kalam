@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool text</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+            
+        }
+        .yo{
+text-align: center;
+        }
+        .hi{
+            color:beige;
+            background-color: black;
+            height: 32vh;
+            width:100vw;
+
+            padding-top:100px;
+            font-family: 'Borel', cursive;
+            font-size: 45px;
+            min-width: 8rem;
+            vertical-align: middle;
+
+        }
+        .lo{
+            padding:30px;
+
+            background-color: #cadc54;
+        }
+    </style>
+</head>
+<body>
+    <div class="yo">
+        <div class="hi">
+            <h1>the beautiful aurora</h1>
+        </div>
+        <div class="lo">
+            <h3>Made with love and only CSS</h3>
+        </div>
+    </div>
+</body>
+</html>

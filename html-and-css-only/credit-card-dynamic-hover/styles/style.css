@@ -1,0 +1,134 @@
+*{
+    margin:0px;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    color:white;
+    /* background-color: #121321; */
+}
+body{
+    background-color: #121321;
+}
+section{
+    position:relative;
+    min-height:100vw;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    perspective:1000px;
+}
+section::before{
+    content:"";
+    position:absolute;
+    height:240px;
+    width:240px;
+    background:linear-gradient(90deg, #9c27b0,#f3f5f5);
+    transform: translate(-150px,-100px);
+    border-radius:50%;
+}
+section::after{
+    content:"";
+    position:absolute;
+    height:240px;
+    width:240px;
+    background:linear-gradient(90deg, #9c27b0,#f3f5f5);
+    transform: translate(150px,100px);
+    border-radius:50%;
+}
+.container{
+    position:relative; /*upar karne ke liye */
+    height:275px;
+    width:375px;
+    z-index:100;
+    transition: 0.6s;
+    transform-style: preserve-3d; /*magic happens here*/
+}
+.container .card{
+    height:100%;
+    width:100%;
+    background-color: rgba(255,255,255,.1);
+    border-radius:25px;
+    box-shadow:0 25px 45px rgba(0,0,0,0.3);
+    backdrop-filter: blur(20px);
+    border:1px solid rgba(255,255,255,.1);
+    padding:15px;
+    backface-visibility: hidden;
+    position:absolute;
+    /* transform:rotateY(180deg); */
+}
+.container:hover{
+    transform:rotateY(180deg);
+}
+.logo img{
+    height:40px;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.chip{
+    height:40px;
+    border-radius:5px;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    padding:25px 0;
+}
+.footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 5px;
+}
+.main-section{
+    height:6rem;
+}
+.make-big{
+    font-size:20px;
+    font-weight: 700;
+}
+.card.back-side{
+    border:none;
+    padding:25px 15px;
+    transform:rotateY(180deg);
+}
+.card.back-side h6{
+font-size: 8px;
+}
+.card.back-side .magnetic-strip{
+    position:absolute;
+    height:45px;
+    width:100%;
+    background-color: black;
+    top:55px;
+    left:0;
+}
+.card.back-side .signature{
+margin-top:90px;
+display:flex;
+justify-content: flex-end;
+align-items: center;
+height:45px;
+width:80%;
+background:repeating-linear-gradient(
+    #fff,#fff 3px, #efefef 0px, #efefef 9px
+);
+border-radius: 6px;
+}
+.signature i{
+color:black;
+margin-right:-30px;
+padding:6px 4px;
+background-color: #fff;
+border-radius: 5px;
+z-index: -1;
+}
+.end-text{
+font-size: 10px;
+margin-top:15px;
+padding-top:10px;
+}

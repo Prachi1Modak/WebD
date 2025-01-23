@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/5d6ce0bbd1.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div><!-- logo here -->
+                <i class="fa-sharp fa-solid fa-circle-dot">CALM</i></div>
+                <!-- Navigation bar here -->
+            <div><ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Calm Playlist</a></li>
+                <li><a href="#">Join Calm</a></li>
+            </ul></div>
+        </nav>
+    </header>
+    <section>
+        <table>
+            <tr>
+                <th><!-- text part here -->
+                    <div>
+                        <h1 class="bold">Be Focused and Productive</h1>
+                        <p>Not just an ordinary headphone. It's designed foe meditation.</p>
+                        <button>Learn More</button>
+                    </div></th>
+                    <th><div>
+                        <table>
+                            <tr>
+                                <td><img src="https://images.pexels.com/photos/3761020/pexels-photo-3761020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1" height="150px" width="150px"></td>
+                                <td> <img src="https://images.pexels.com/photos/4887246/pexels-photo-4887246.jpeg?auto=compress&cs=tinysrgb&w=600" alt="2" height="150px" width="150px" ></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> <img src="https://images.pexels.com/photos/164710/pexels-photo-164710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="3" height="200px" width="300px" ></tr></td>
+                               <td></td>
+                        </table>
+                    </div></th>
+            </tr>
+        </table>
+
+
+    </section>
+</body>
+</html>

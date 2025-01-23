@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushable buttons:</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Borel', cursive;
+            text-align: center; /*very imp brings like the whole content as the divs in the center too and the text in those divs too*/
+            /*letter-spacing: 1px; adds like spacing btw letters*/
+
+        }
+        .class{
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+            display:inline-block;
+            width: 150px;
+            position: relative;
+            border-radius: 5px;
+            text-shadow: 1px 1px 0px #000;
+            
+/*idk how but deff elevated the look broi*/   
+box-shadow: 4px 7px 0px ; 
+min-width: 10rem; /*If the content inside the element requires less than 10 rem units of width to be displayed properly, the element will take the minimum required width, which is 10 rem.
+If the content inside the element requires more than 10 rem units of width to be displayed properly, the element will expand its width to accommodate the content.
+In other words, the element will never be narrower than 10 rem units, but it can be wider if its content requires more space. This property is useful when you want to ensure that an element has a minimum width to avoid content overflow or maintain a consistent layout for larger text content*/
+transition: all 0.2s;
+    }
+        #yes{
+            background-color: #FF5F9E;
+            vertical-align: middle;
+        }
+        #yes:active{
+            box-shadow: 2px 3px 0px #f84b90;
+        }
+        #no{
+            background-color: #E90064;
+            vertical-align: middle;
+        }
+        #no:active{
+            box-shadow: 2px 3px 0px #bd205f;
+        }
+        #idk{
+            background-color: #b0275e;
+            vertical-align: middle;
+        }
+        #idk:active{
+            box-shadow: 2px 3px 0px #950150e6;
+        }
+        .yo{
+           /* display:inline-block;*/
+            background-color: #776fd8;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            vertical-align: middle;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="yo">
+        
+            <div class="class" id="yes"> <img src="icons8-round-24 (1).png" alt="logo1"> Preview Quote</div>
+        
+        
+            <div class="class" id="no"> <img src="icons8-music-24 (1).png" alt="logo2">Send Quote</div>
+        
+        
+            <div class="class" id="idk"> <img src="icons8-speech-bubble-24.png" alt="logo3">Create Job</div>
+        
+    </div>
+
+</body>
+</html>
